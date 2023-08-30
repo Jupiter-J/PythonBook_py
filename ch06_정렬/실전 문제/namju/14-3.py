@@ -11,7 +11,7 @@ def solution(N, stages):
         if allPlayer == 0: # 스테이지에 도달한 플레이어 수가 0명일 때
             ratio[i] = 0
         else:
-            ratio[i] = stages.count(i ) /allPlayer
+            ratio[i] = stages.count(i) /allPlayer
             allPlayer -= stages.count(i) # 현재 스테이지에 멈춘 숫자만큼 제외
 
     # value 기준으로 정렬 후 key 저장
